@@ -1,0 +1,20 @@
+Options -Indexes
+
+# AUTENTICACIÓN BÁSICA CON .htpasswd
+AuthType Basic
+AuthName "Zona privada – Introduce tus credenciales"
+AuthUserFile /Users/mariotomecore/web_security/.htpasswd
+Require valid-user
+
+
+# PÁGINAS DE ERROR PERSONALIZADAS
+ErrorDocument 401 /cyber-tracker/errores/error401.php
+ErrorDocument 404 /cyber-tracker/errores/error404.php
+
+
+# RESTRICCIÓN POR IP Y USUARIO
+<RequireAll>
+    Require valid-user
+    Require ip 127.0.0.1
+    Require ip ::1
+</RequireAll>

@@ -1,0 +1,6 @@
+# REDIRECCIÓN PERMANENTE (301)
+Redirect 301 /cyber-tracker/old.php http://localhost:8888/cyber-tracker/new.php
+
+# PÁGINAS DE ERROR PERSONALIZADAS
+ErrorDocument 401 /cyber-tracker/errores/error401.php
+ErrorDocument 404 /cyber-tracker/errores/error404.php

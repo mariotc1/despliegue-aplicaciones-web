@@ -1,0 +1,7 @@
+# ISOs
+isos/
+*.iso
+
+# Máquinas virtuales UTM
+MV/
+*.utm
